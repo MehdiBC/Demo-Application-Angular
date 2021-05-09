@@ -1,0 +1,3 @@
+<ol class="list-group" *ngFor="let personne of personnel; let ind = index;">
+  <app-item-cv (selectedPersonne)="selectedPerson($event)" *ngIf="personnel" [personne]="personnel[ind]"></app-item-cv>
+</ol>
