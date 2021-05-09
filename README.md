@@ -1,6 +1,6 @@
 # Demo-Application
 
-From techwall angular tutorial
+demo application following techwall angular tutorial.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
 
