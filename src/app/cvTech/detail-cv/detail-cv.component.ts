@@ -20,9 +20,9 @@ export class DetailCvComponent implements OnInit {
 
   hire(): void {
     if (this.cvService.hirePerson(this.person)){
-      this.toasterService.success(`personne ${this.person.firstName} embauchée avec succès`);
+      this.toasterService.success(`La personne ${this.person.firstName} embauchée avec succès`, `Succès d'embauche`);
     }else {
-      this.toasterService.error(`personne ${this.person.firstName} est déja embauchée`);
+      this.toasterService.error(`La personne ${this.person.firstName} est déja embauchée`, `Echec d'embauche`);
     }
   }
 }

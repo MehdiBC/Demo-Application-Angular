@@ -37,10 +37,11 @@ import { HiredCvComponent } from './cvTech/hired-cv/hired-cv.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 2000,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
