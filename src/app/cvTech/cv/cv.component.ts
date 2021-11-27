@@ -1,7 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Person} from '../../model/Person';
 import {CvService} from '../../service/cv.service';
-import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-cv',
@@ -11,7 +10,7 @@ import {HttpClient} from '@angular/common/http';
 export class CvComponent implements OnInit {
   @Input() personnel: Person[] = [];
   selectedPersonne!: Person;
-  constructor(private cvService: CvService, private http: HttpClient) { }
+  constructor(private cvService: CvService) { }
 
   ngOnInit(): void {
     this.personnel = this.cvService.getPersons();
