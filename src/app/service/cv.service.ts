@@ -19,10 +19,12 @@ export class CvService {
     return this.persons;
   }
 
-  hirePerson(person: Person): void{
+  hirePerson(person: Person): boolean{
     if (this.personsHired.indexOf(person) === -1) {
       this.personsHired.push(person);
+      return true;
     }
+    return false;
   }
 
   getHiredPersons(): Person[] {
