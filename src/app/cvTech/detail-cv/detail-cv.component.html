@@ -5,13 +5,13 @@
         <img src="">
       </div>
       <div class="user">
-        <img class="img-circle" src="assets/images/{{ personne?.path }}">
+        <img class="circle-image" src="assets/images/{{ person?.path }}">
       </div>
       <div class="content">
         <div class="main">
-          <h3 class="name">{{ personne?.firstName }} {{ personne?.name }}</h3>
-          <p class="profession">{{ personne?.job }}</p>
-          <p class="text-center">{{ personne?.age }} year</p>
+          <h3 class="name">{{ person?.firstName }} {{ person?.name }}</h3>
+          <p class="profession">{{ person?.job }}</p>
+          <p class="text-center">{{ person?.age }} year</p>
         </div>
         <div class="footer">
           <i class="fa fa-mail-forward"></i> Auto Rotation
@@ -24,7 +24,8 @@
       </div>
       <div class="content">
         <div class="main">
-          <h4 class="text-center">{{ personne?.cin }}</h4>
+          <h4 class="text-center">{{ person?.cin }}</h4>
+          <button id="embaucher" class="btn btn-primary" (click)="hire()">embaucher</button>
         </div>
       </div>
       <div class="footer">

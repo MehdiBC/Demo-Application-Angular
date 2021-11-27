@@ -13,6 +13,7 @@ import { FilsComponent } from './pereEtFils/fils/fils.component';
 import { StyleComponent } from './directive/style/style.component';
 import { HighlightDirectiveDirective } from './directive/highlight-directive.directive';
 import {HttpClientModule} from '@angular/common/http';
+import { HiredCvComponent } from './cvTech/hired-cv/hired-cv.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {HttpClientModule} from '@angular/common/http';
     FilsComponent,
     StyleComponent,
     HighlightDirectiveDirective,
+    HiredCvComponent,
   ],
   imports: [
     BrowserModule,

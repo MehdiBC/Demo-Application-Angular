@@ -1,0 +1,5 @@
+<div id="hired-person" class="container"  *ngIf="getHiredPersons().length">
+  <span *ngFor="let person of getHiredPersons()">
+    <app-item-cv [person]="person"></app-item-cv>
+  </span>
+</div>

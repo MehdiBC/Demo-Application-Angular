@@ -3,6 +3,9 @@
     <app-liste-cv (selectedPersonne)="selectedPerson($event)" [personnel]="personnel"></app-liste-cv>
   </div>
   <div class="col-md-6 col-sm-9">
-    <app-detail-cv *ngIf="selectedPersonne" [personne]="selectedPersonne"></app-detail-cv>
+    <app-detail-cv *ngIf="selectedPersonne" [person]="selectedPersonne"></app-detail-cv>
   </div>
+</div>
+<div class="row">
+  <app-hired-cv></app-hired-cv>
 </div>
