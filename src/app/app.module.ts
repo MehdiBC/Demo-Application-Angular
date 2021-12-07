@@ -1,7 +1,7 @@
 // Application Dependencies
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastrModule} from 'ngx-toastr';
 
@@ -13,13 +13,14 @@ import { CvComponent } from './cvTech/cv/cv.component';
 import { ListeCvComponent } from './cvTech/liste-cv/liste-cv.component';
 import { ItemCvComponent } from './cvTech/item-cv/item-cv.component';
 import { DetailCvComponent } from './cvTech/detail-cv/detail-cv.component';
+import { HiredCvComponent } from './cvTech/hired-cv/hired-cv.component';
 
 // Learning components
 import { PereComponent } from './pereEtFils/pere/pere.component';
 import { FilsComponent } from './pereEtFils/fils/fils.component';
 import { StyleComponent } from './directive/style/style.component';
 import { HighlightDirectiveDirective } from './directive/highlight-directive.directive';
-import { HiredCvComponent } from './cvTech/hired-cv/hired-cv.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { HiredCvComponent } from './cvTech/hired-cv/hired-cv.component';
     StyleComponent,
     HighlightDirectiveDirective,
     HiredCvComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +43,7 @@ import { HiredCvComponent } from './cvTech/hired-cv/hired-cv.component';
     ToastrModule.forRoot({
       timeOut: 2000,
     }),
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
